@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import HehMda from "./components/HehMda";
+import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 import { cardInfo } from "./data";
 
@@ -38,6 +39,7 @@ function App() {
           </ul>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
