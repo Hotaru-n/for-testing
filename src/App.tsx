@@ -5,7 +5,7 @@ import { useState } from "react";
 import { cardInfo } from "./data";
 
 function App() {
-  const [heh, setHeh] = useState(cardInfo);
+  const [heh] = useState(cardInfo);
 
   return (
     <div
