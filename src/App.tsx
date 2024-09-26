@@ -25,7 +25,7 @@ function App() {
               fontSize: "2.5rem",
             }}
           >
-            Чтение для всей семьи:
+            Книгусы:
           </h1>
           <ul className="container">
             {heh.map((item) => (
