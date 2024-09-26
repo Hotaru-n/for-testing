@@ -17,4 +17,34 @@ export const cardInfo = [
     author: "Cigan Informovich Naeberg",
     summ: "Признайтесь, вас тоже бесит что на освоение навыка на про уровне нужно потратить аж 10 тысяч часов! Решение найдено!",
   },
+  {
+    id: 4,
+    title: "The Silent River",
+    author: "James Thornton",
+    tittle: "Загадочная река, полная тайн и опасностей",
+  },
+  {
+    id: 5,
+    title: "Whispers in the Wind",
+    author: "Emily Rosewood",
+    tittle: "Тайные шепоты, несущиеся по ветру",
+  },
+  {
+    id: 6,
+    title: "Echoes of the Past",
+    author: "David Harper",
+    tittle: "Эхо прошлого, напоминающее о забытых временах",
+  },
+  {
+    id: 7,
+    title: "The Lost Horizon",
+    author: "Sophia Willow",
+    tittle: "Затерянный горизонт, ускользающий за гранью реальности",
+  },
+  {
+    id: 8,
+    title: "Shadows of Eternity",
+    author: "Oliver Grey",
+    tittle: "Тени вечности, скрывающие древние тайны",
+  },
 ];

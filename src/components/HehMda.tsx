@@ -1,4 +1,4 @@
-export default function HehMda(props: any) {
+export default function HehMda(props) {
   console.log(props);
   return (
     <li>
