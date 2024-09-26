@@ -15,7 +15,7 @@ function App() {
         backgroundImage: `url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8e30c315-b987-4266-9f49-3c55f318ee4e/dbzkew5-bbb0fd40-adf7-4e50-8430-eb4717c3fb54.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhlMzBjMzE1LWI5ODctNDI2Ni05ZjQ5LTNjNTVmMzE4ZWU0ZVwvZGJ6a2V3NS1iYmIwZmQ0MC1hZGY3LTRlNTAtODQzMC1lYjQ3MTdjM2ZiNTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PWztA6nIkElDO9qKU5kvuX8sYg-30vtLg-ey3IZWGZM")`,
 
         
-        height: 1080,
+        // height: 1080,
         backgroundSize: "contain",
         // backgroundRepeat: "no-repeat",
       }}
@@ -26,6 +26,7 @@ function App() {
           <h1
             style={{
               fontSize: "2.5rem",
+              marginLeft: '1rem'
             }}
           >
             Книгусы:
