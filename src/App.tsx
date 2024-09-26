@@ -39,11 +39,14 @@ function App() {
           </ul>
         </section>
 
-        <section>
-          <h1
-          style={{
+        <section style={{
             textAlign: 'center',
-          }}>MESSAGE</h1>
+          }} >
+          <h1
+          >MESSAGE</h1>
+          <p>
+            ёбаный рот этого git-казино блядь
+          </p>
         </section>
 
       </main>
