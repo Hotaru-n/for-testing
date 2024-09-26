@@ -38,6 +38,14 @@ function App() {
             ))}
           </ul>
         </section>
+
+        <section>
+          <h1
+          style={{
+            textAlign: 'center',
+          }}>MESSAGE</h1>
+        </section>
+
       </main>
       <Footer />
     </div>
