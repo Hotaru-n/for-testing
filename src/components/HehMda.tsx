@@ -1,5 +1,4 @@
 export default function HehMda(props) {
-  console.log(props);
   return (
     <li>
       <img src="/images/anime.png" alt="anime" />

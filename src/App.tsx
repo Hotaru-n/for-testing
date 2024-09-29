@@ -6,6 +6,8 @@ import { cardInfo } from "./data";
 
 function App() {
   const [heh] = useState(cardInfo);
+  const [filterText,changeFilter] = useState('');
+  console.log(filterText);
 
   return (
     <div
@@ -30,15 +32,23 @@ function App() {
           >
             Книгусы:
           </h1>
+
+          <input type="text" value={filterText}
+          onChange={(event) => changeFilter( event.target.value ) } />
+
           <ul className="container">
-            {heh.map((item) => (
-              <HehMda
+            {heh.map((item) => {
+              
+
+              if(item.title.toLowerCase().includes(filterText.toLowerCase())  ) {
+                return (<HehMda
                 key={item.id}
                 title={item.title}
                 author={item.author}
                 summ={item.summ}
-              />
-            ))}
+              />)
+              }}
+            )}
           </ul>
         </section>
 
