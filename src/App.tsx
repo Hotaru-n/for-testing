@@ -32,15 +32,17 @@ function App() {
           >
             Книгусы:
           </h1>
-
-          <input type="text" value={filterText}
+          <h4 style={{
+            marginBottom: '0px',
+          }} >search</h4>
+          <input placeholder="filter" type="text" value={filterText}
           onChange={(event) => changeFilter( event.target.value ) } />
 
           <ul className="container">
             {heh.map((item) => {
               
 
-              if(item.title.toLowerCase().includes(filterText.toLowerCase())  ) {
+              if(item.title.toLowerCase().includes(filterText.toLowerCase()) || item.author.toLowerCase().includes(filterText.toLowerCase() )) {
                 return (<HehMda
                 key={item.id}
                 title={item.title}
@@ -49,6 +51,7 @@ function App() {
               />)
               }}
             )}
+
           </ul>
         </section>
 
