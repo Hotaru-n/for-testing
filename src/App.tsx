@@ -3,11 +3,14 @@ import HehMda from "./components/HehMda";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 import { cardInfo } from "./data";
+import { useMemo } from "react";
 
 function App() {
   const [heh] = useState(cardInfo);
   const [filterText,changeFilter] = useState('');
   console.log(filterText);
+
+  const lowerCasedFilterText = useMemo(() => filterText.toLowerCase(), [filterText] )
 
   return (
     <div
@@ -50,7 +53,7 @@ function App() {
             {heh.map((item) => {
               
 
-              if(item.title.toLowerCase().includes(filterText.toLowerCase()) || item.author.toLowerCase().includes(filterText.toLowerCase() )) {
+              if(item.title.toLowerCase().includes(lowerCasedFilterText) || item.author.toLowerCase().includes(lowerCasedFilterText)) {
                 return (<HehMda
                 key={item.id}
                 title={item.title}
