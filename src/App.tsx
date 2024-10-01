@@ -38,7 +38,15 @@ function App() {
           <input placeholder="filter" type="text" value={filterText}
           onChange={(event) => changeFilter( event.target.value ) } />
 
-          <ul className="container">
+<ul className="container">
+  {heh
+    .filter(({ title, author }) => new RegExp(filterText, 'i').test(title) || new RegExp(filterText, 'i').test(author))
+    .map(({ id, title, author, summ }) => (
+      <HehMda key={id} title={title} author={author} summ={summ} />
+    ))}
+</ul>
+
+          {/* <ul className="container">
             {heh.map((item) => {
               
 
@@ -52,7 +60,7 @@ function App() {
               }}
             )}
 
-          </ul>
+          </ul> */}
         </section>
 
         <section style={{
