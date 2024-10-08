@@ -2,8 +2,8 @@ import { AppDispatch, RootState } from "../state/store";
 import { useDispatch, useSelector } from "react-redux";
 import {
   decrement,
-  increment,
-  incrementByAmount,
+  //   increment,
+  //   incrementByAmount,
   incrementAsync,
 } from "../state/counter/counterSlice";
 
