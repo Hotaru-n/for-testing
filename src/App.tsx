@@ -35,7 +35,7 @@ function App() {
               marginLeft: "1rem",
             }}
           >
-            Книгусы:
+            Fake Books:
           </h1>
 
           <h2>Redux Complete Tutorial</h2>
@@ -74,6 +74,7 @@ function App() {
                     key={item.id}
                     title={item.title}
                     author={item.author}
+                    price={item.price}
                     summ={item.summ}
                   />
                 );

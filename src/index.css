@@ -13,6 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+header .shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+  color: #efb146;
+}
+
 main {
   font-size: 18px;
 }

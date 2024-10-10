@@ -1,4 +1,6 @@
 import { styled } from "styled-components";
+import { FaShoppingBag } from "react-icons/fa";
+import { useState } from "react";
 
 const HeaderContainer = styled.header`
   height: 50px;
@@ -12,11 +14,19 @@ const HeaderContainer = styled.header`
 `;
 
 export default function Header() {
-  return (
-    <HeaderContainer>
-      <h3> Goyda! </h3>
+  const [cartOpen, setCartOpen] = useState(false);
 
-      <span>Кто прочитал тот {"пидар".toUpperCase()}</span>
-    </HeaderContainer>
+  return (
+    <div>
+      <HeaderContainer>
+        <h3> Goyda! </h3>
+
+        <span>Кто прочитал тот {"пидар".toUpperCase()}</span>
+        <FaShoppingBag
+          onClick={() => setCartOpen((cartOpen) => !cartOpen)}
+          className={`shop-cart-button ${cartOpen && "active"} `}
+        />
+      </HeaderContainer>
+    </div>
   );
 }
