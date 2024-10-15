@@ -1,3 +1,4 @@
+import "./Button/Button.css";
 import { AppDispatch, RootState } from "../state/store";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,8 +16,15 @@ export default function Counter() {
     <div>
       <h2>{count}</h2>
       <div>
-        <button onClick={() => dispatch(incrementAsync(10))}>Increment</button>
-        <button onClick={() => dispatch(decrement())}>Decrement</button>
+        <button
+          className="button active"
+          onClick={() => dispatch(incrementAsync(10))}
+        >
+          Increment
+        </button>
+        <button className="button active" onClick={() => dispatch(decrement())}>
+          Decrement
+        </button>
       </div>
     </div>
   );
