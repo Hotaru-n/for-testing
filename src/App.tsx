@@ -37,31 +37,29 @@ function App() {
           >
             Fake Books:
           </h1>
-
-          <h2>Redux Complete Tutorial</h2>
-          <Counter />
-
-          <h4
+          <div
             style={{
-              marginBottom: "0px",
+              marginLeft: "1rem",
+              textAlign: "center",
             }}
           >
-            search
-          </h4>
-          <input
-            placeholder="filter"
-            type="text"
-            value={filterText}
-            onChange={(event) => changeFilter(event.target.value)}
-          />
+            <h2>Redux Complete Tutorial</h2>
+            <Counter />
 
-          {/* <ul className="container">
-  {heh
-    .filter(({ title, author }) => new RegExp(filterText, 'i').test(title) || new RegExp(filterText, 'i').test(author))
-    .map(({ id, title, author, summ }) => (
-      <HehMda key={id} title={title} author={author} summ={summ} />
-    ))}
-</ul> */}
+            <h4
+              style={{
+                marginBottom: "0px",
+              }}
+            >
+              search
+            </h4>
+            <input
+              placeholder="filter"
+              type="text"
+              value={filterText}
+              onChange={(event) => changeFilter(event.target.value)}
+            />
+          </div>
 
           <ul className="container">
             {heh.map((item) => {
@@ -89,7 +87,7 @@ function App() {
           }}
         >
           <h1>MESSAGE</h1>
-          <p>ёбаный рот этого git-казино блядь!</p>
+          <p> вау мяу</p>
         </section>
       </main>
 

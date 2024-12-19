@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   position: relative;
 }
@@ -36,9 +40,18 @@ header .shop-cart {
   top: 50px;
   width: 450px;
   min-height: 100px;
-  background: #c8c8c8;
-  box-shadow: 0px 0px 20px 4px #92ceff67;
+  background: #e9eff5;
+  color: #242424;
+  /* box-shadow: 0px 0px 20px 4px #92ceff67; */
   z-index: 1000;
+}
+
+header p {
+  color: #aa2e2e;
+  font-size: 18px;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
 }
 
 main {
@@ -51,6 +64,7 @@ h3 {
 
 section ul {
   list-style: none;
+  /* padding-inline-start: 1rem; */
 }
 
 section ul li {
@@ -76,6 +90,7 @@ img {
 
 .container {
   display: flex;
+  justify-content: start;
   flex-wrap: wrap;
   gap: calc(25px - 1rem) 25px;
 }

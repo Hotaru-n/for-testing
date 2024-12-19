@@ -8,7 +8,13 @@ export default function HehMda(props) {
   return (
     <li>
       <img src="/images/anime.png" alt="anime" />
-      <h3>{props.title}</h3>
+      <h3
+        style={{
+          height: "3em",
+        }}
+      >
+        {props.title}
+      </h3>
       <p> Автор: {props.author}</p>
       <div style={{ marginBottom: "1rem" }}>
         <span
