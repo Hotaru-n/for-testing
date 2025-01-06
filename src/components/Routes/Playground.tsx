@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import Button from "../Button/Button";
 import styled from "styled-components";
 import Counter from "../Counter";
+import NivoPi from "../NivoPi/NivoPi";
 
 const HeaderContainer = styled.header`
   height: 80px;
@@ -39,6 +40,7 @@ export default function Playground() {
           <h2>Redux Complete Tutorial</h2>
           <Counter />
         </section>
+        <NivoPi />
       </main>
     </div>
   );
