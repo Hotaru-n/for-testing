@@ -28,7 +28,7 @@ export default function HehMda(props) {
         </span>
         <Button onClick={handleClick}>mau</Button>
       </div>
-      {props.summ}
+      <div style={{ whiteSpace: "pre-wrap" }}>{props.summ}</div>
     </li>
   );
 }

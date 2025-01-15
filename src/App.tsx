@@ -51,9 +51,15 @@ function App() {
                 marginBottom: "0px",
               }}
             >
-              search
+              search:
             </h4>
             <input
+              style={{
+                height: "2rem",
+                borderRadius: "8px",
+                colorScheme: "normal",
+                fontSize: "1rem",
+              }}
               placeholder="filter"
               type="text"
               value={filterText}

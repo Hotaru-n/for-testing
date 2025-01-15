@@ -48,18 +48,18 @@ const NivoPi = () => {
   return (
     <div
       style={{
-        width: "700px",
-        height: "700px",
-        display: "flex",
-        justifyContent: "start",
-        flexDirection: "column",
+        width: "500px",
+        height: "500px",
+        // display: "flex",
+        // justifyContent: "start",
+        // flexDirection: "column",
       }}
     >
-      <h1 style={{ marginLeft: "2rem" }}>NivoPie - соси и глотай!</h1>
+      <h1 style={{ paddingLeft: "2rem" }}>NivoPie</h1>
       <div
         style={{
-          width: "700px",
-          height: "700px",
+          width: "500px",
+          height: "500px",
         }}
       >
         <ResponsivePie
